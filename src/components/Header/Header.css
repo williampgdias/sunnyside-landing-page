@@ -1,0 +1,70 @@
+.header {
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  background: url('../../assets/desktop/image-header.jpg') no-repeat center;
+  background-size: cover;
+  height: 95vh;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header ul {
+  display: flex;
+  font-size: 0.9rem;
+}
+
+.header ul a {
+  color: var(--white);
+  padding: 0.5rem 0.8rem;
+  margin: 0.4rem;
+}
+
+.header ul .link-contact {
+  font-family: 'Fraunces', serif;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 0.8rem 1.4rem;
+  text-transform: uppercase;
+  color: var(--very-dark-desatured-blue);
+}
+
+.intro {
+  padding-top: 6rem;
+  font-family: 'Fraunces', serif;
+  color: var(--white);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.intro img {
+  padding-top: 5rem;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+  .nav-bar {
+    display: none;
+  }
+}

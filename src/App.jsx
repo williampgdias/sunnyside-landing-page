@@ -1,11 +1,10 @@
-import Navbar from './components/Navbar';
+import Header from './components/Header/Header';
 import './index.css';
 
 const App = () => {
   return (
     <>
-      <h1>Sunny-side</h1>
-      <Navbar />
+      <Header />
     </>
   );
 };
